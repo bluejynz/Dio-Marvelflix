@@ -1,0 +1,339 @@
+:root {
+    --dark-grey: #121212;
+    --light-grey: #ECECEC;
+    --vivid-red: #FF0000;
+    --dark-red: #8F0000;
+    --vivid-blue: #0047cc;
+    --dark-blue: #00113F;
+    --gold: #ffbb00;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Averia Libre', cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--dark-grey);
+    color: var(--light-grey);
+}
+
+a, ul, ol, li {
+    list-style: none;
+    text-decoration: none;
+    color: var(--light-grey);
+}
+
+.container {
+    margin: auto 10%;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px auto;
+}
+
+header .logo {
+    color: var(--dark-red);
+    font-size: 40px;
+}
+
+header nav a {
+    margin-right: 10px;
+    transition: .3s ease;
+}
+
+header nav a:hover {
+    color: var(--vivid-red);
+}
+
+/**/
+
+main .filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)100%), url('/src/img/capa\ spdmnwh.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+main .filme-principal .container {
+    width: 70%;
+}
+
+main .filme-principal .container .title {
+    margin-top: 15%;
+    font-size: 40px;
+}
+
+main .filme-principal .container .description {
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.btn {
+    background-color: rgba(0,0,0,.5);
+    border: none;
+    color: var(--light-grey);
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .3s ease;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: var(--light-grey);
+    color: var(--dark-grey);
+}
+
+.btn span, .btn-2 span {
+    margin-right: 8px;
+}
+
+.box-img {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.owl-carousel .item {
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.owl-carousel .item:hover {
+    cursor: pointer;
+    transform: scale(120%);
+}
+
+.carousel {
+    margin: auto 3%;
+}
+
+.carousel .title {
+    margin: 10px auto;
+}
+
+.btn-card {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-icon {
+    background-color: transparent;
+    border-radius: 50px;
+    padding: 5px 7px;
+    color: var(--light-grey);
+    border: 2px solid rgba(236,236,236,.3);
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.btn-icon:hover {
+    border: 2px solid var(--light-grey);
+}
+
+.btn-2 {
+    background-color: var(--light-grey);
+    border: none;
+    color: var(--dark-grey);
+    padding: 15px 30px;
+    margin-right: 5px;
+    font-size: 14px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: .3s ease;
+    border-radius: 5px;
+}
+
+.btn-2:hover {
+    background-color: rgba(0,0,0,.5);
+    color: var(--light-grey);
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.modal {
+    max-width: 800px;
+}
+
+.modal .title-name {
+    background: linear-gradient(rgba(0,0,0, .3), var(--dark-blue)100%), url('/src/img/capa\ spdmnwh.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.modal-container {
+    padding: 50px;
+}
+
+.modal .title-name .title {
+    font-size: 40px;
+    margin-top: 30%;
+    margin-bottom: 20px;
+}
+
+.modal .description {
+    padding-top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating {
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 2px;
+    padding: 3px 5px;
+    background-color: var(--gold);
+    color: var(--dark-blue);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.resolution {
+    font-size: 12px;
+    border: 1px solid var(--light-grey);
+    border-radius: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 5px;
+}
+
+.modal p {
+    margin-bottom: 15px;
+}
+
+.modal .chamativo {
+    font-size: 24px;
+}
+
+.description .left {
+    width: 60%;
+}
+
+.description .right {
+    width: 30%;
+    text-align: end;
+}
+
+.description .right span {
+    color: var(--vivid-blue);
+}
+
+.description .right p a {
+    transition: .3s ease;
+}
+
+.description .right p a:hover {
+    color: var(--vivid-blue);
+}
+
+.semelhantes .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.semelhantes p {
+    margin-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.semelhantes p.desc {
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.semelhantes .card {
+    width: 30%;
+    background-color: var(--vivid-blue);
+    padding-bottom: 15px;
+    margin-top: 15px;
+}
+
+.semelhantes .card img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.semelhantes .row {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    margin-bottom: 15px;
+}
+
+.semelhantes .row .btn-icon {
+    margin-top: -5px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+/*fixed*/
+
+.modal .btn-close {
+    background-color: var(--dark-blue);
+    filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.5));
+    border: none;
+    border-radius: 50px;
+    padding: 6px 10px;
+    color: var(--light-grey);
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px
+}
+
+.back-to-top {
+    background-color: rgba(236,236,236,.3);
+    color: var(--dark-grey);
+    padding: 10px 12px;
+    transition: .3s ease;
+    border-radius: 20%;
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    z-index: 10;
+    filter: drop-shadow(0 0 8px rgba(0,0,0,.5));
+}
+
+.back-to-top:hover {
+    color: var(--light-grey);
+}
+
+.modal {
+    background-color: var(--dark-blue);
+    position: absolute;
+    z-index: 20;
+    min-height: 500px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 0;
+    top: 20px;
+    left: 0;
+    right: 0;
+    filter: drop-shadow(0 0 5px rgba(0,0,0,.5));
+    border-radius: 10px 0;
+}
